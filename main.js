@@ -37,7 +37,7 @@ const displayBooks = (books) => {
         const noImageUrl = `image/image-1.png`;
         return noImageUrl;
       } else {
-        const imageUrl = `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`;
+        const imageUrl = `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`;
 
         return imageUrl;
       }
@@ -56,7 +56,7 @@ const displayBooks = (books) => {
     div.classList.add("col");
     div.innerHTML = `
         <div class="card h-100">
-          <img src="${checkImage()}" class="card-img-top" height="370px" alt="..."/>
+          <img src="${checkImage()}" class="card-img-top" height="365px" alt="..."/>
           <div class="card-body">
             <h4 class="text-primary">Book Name: ${book.title}</h4>
             <p class="fw-bold">
