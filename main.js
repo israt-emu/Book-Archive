@@ -28,7 +28,6 @@ const searchResult = (data) => {
 };
 ///showing books image and informations
 const displayBooks = (books) => {
-  console.log(books);
   //clear previous result before displaying new result
   bookContainer.textContent = "";
   books.forEach((book) => {
@@ -58,7 +57,7 @@ const displayBooks = (books) => {
     div.classList.add("col");
     div.innerHTML = `
         <div class="card h-100">
-          <img src="${checkImage()}" class="card-img-top" alt="..."/>
+          <img src="${checkImage()}" class="card-img-top img-fluid" alt="..."/>
           <div class="card-body">
             <h4 class="text-primary">Book Name: ${book.title}</h4>
             <p class="fw-bold">
