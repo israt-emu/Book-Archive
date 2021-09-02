@@ -34,8 +34,7 @@ const displayBooks = (books) => {
     ///checking image
     const checkImage = () => {
       if (book.cover_i === undefined) {
-        const noImageUrl =
-          "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg";
+        const noImageUrl = `image/image-1.png`;
         return noImageUrl;
       } else {
         const imageUrl = `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`;
